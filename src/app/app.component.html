@@ -2,15 +2,15 @@
 
 <main>
   <div id="dashboard">
-    <div class="dashboard-item">
+    <app-dashboard-item>
       <app-server-status [currentStatus]="currentStatus" />
-    </div>
+    </app-dashboard-item>
 
-    <div class="dashboard-item">
+    <app-dashboard-item>
       <app-traffic />
-    </div>
+    </app-dashboard-item>
 
-    <div class="dashboard-item">
+    <app-dashboard-item>
       <article>
         <header>
           <img src="list.png" alt="A list of items" />
@@ -20,6 +20,6 @@
           <p>Todo...</p>
         </div>
       </article>
-    </div>
+    </app-dashboard-item>
   </div>
 </main>
