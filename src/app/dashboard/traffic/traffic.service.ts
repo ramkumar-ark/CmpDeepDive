@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { dummyTrafficData } from '../dummy-traffic-data';
+import { dummyTrafficData } from '../../dummy-traffic-data';
 
 @Injectable({ providedIn: 'root' })
 export class TrafficService {
