@@ -28,12 +28,6 @@ main {
   max-width: 85rem;
 }
 
-.dashboard-item header img {
-  width: 1.5rem;
-  height: 1.5rem;
-  object-fit: contain;
-}
-
 @media (min-width: 768px) {
   #dashboard {
     flex-direction: row;
