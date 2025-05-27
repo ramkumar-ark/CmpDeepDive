@@ -1,17 +1,15 @@
 <form>
-  <p>
-    <label for="ticketTitle">Ticket Title:</label>
+  <app-control label="Ticket Title">
     <input type="text" id="ticketTitle" name="ticketTitle" required />
-  </p>
-  <p>
-    <label for="ticketRequest">Ticket Request:</label>
+  </app-control>
+  <app-control label="Ticket Request">
     <textarea
       id="ticketRequest"
       name="ticketRequest"
       rows="3"
       required
     ></textarea>
-  </p>
+  </app-control>
   <p>
     <button type="submit" app-button>
       Submit Ticket
