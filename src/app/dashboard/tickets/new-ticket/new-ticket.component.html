@@ -1,4 +1,4 @@
-<form>
+<form (ngSubmit)="onSubmit()" #ticketForm>
   <app-control label="Ticket Title">
     <input type="text" id="ticketTitle" name="ticketTitle" required />
   </app-control>
