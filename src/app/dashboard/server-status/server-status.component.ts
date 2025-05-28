@@ -8,7 +8,7 @@ import { Component, OnDestroy, OnInit, signal } from '@angular/core';
 })
 export class ServerStatusComponent implements OnInit, OnDestroy {
   currentStatus = signal<'online' | 'offline' | 'unknown'>('online');
-  private interval: NodeJS.Timeout | undefined;
+  private interval: ReturnType<typeof setInterval> | undefined;
 
   ngOnInit() {
     this.interval = setInterval(() => {
