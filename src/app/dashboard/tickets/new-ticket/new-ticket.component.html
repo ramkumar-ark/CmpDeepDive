@@ -1,18 +1,19 @@
-<form (ngSubmit)="onSubmit()" #ticketForm>
-  <app-control label="Ticket Title">
-    <input type="text" id="ticketTitle" name="ticketTitle" required />
+<form (ngSubmit)="onSubmit(title.value, request.value)" #ticketForm>
+  <app-control label="Title">
+    <input type="text" id="ticketTitle" name="ticketTitle" required #title />
   </app-control>
-  <app-control label="Ticket Request">
+  <app-control label="Request">
     <textarea
       id="ticketRequest"
       name="ticketRequest"
       rows="3"
       required
+      #request
     ></textarea>
   </app-control>
   <p>
     <button type="submit" app-button>
-      Submit Ticket
+      Submit
       <span ngProjectAs="icon">➡️</span>
     </button>
   </p>
