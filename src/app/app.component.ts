@@ -17,6 +17,4 @@ import { TicketsComponent } from './dashboard/tickets/tickets.component';
     TicketsComponent,
   ],
 })
-export class AppComponent {
-  currentStatus = 'online';
-}
+export class AppComponent {}
