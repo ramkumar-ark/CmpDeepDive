@@ -6,10 +6,10 @@
         'ticket-closed': ticketData().status === 'closed',
       }"
     ></div>
-    <button>
+    <button (click)="toggleDetails()">
       <span class="text">{{ ticketData().title }}</span>
       <span>
-        @if (true) {
+        @if (detailsVisible()) {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -43,7 +43,7 @@
     </button>
   </h3>
 
-  @if (true) {
+  @if (detailsVisible()) {
   <p>{{ ticketData().request }}</p>
 
   @if (ticketData().status === 'open') {
