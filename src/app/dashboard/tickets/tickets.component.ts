@@ -22,4 +22,12 @@ export class TicketsComponent {
     };
     this.tickets.update((currentTickets) => [...currentTickets, ticket]);
   }
+
+  markTicketAsCompleted(ticketId: string) {
+    this.tickets.update((currentTickets) =>
+      currentTickets.map((ticket) =>
+        ticket.id === ticketId ? { ...ticket, status: 'closed' } : ticket
+      )
+    );
+  }
 }

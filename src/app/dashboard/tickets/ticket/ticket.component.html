@@ -47,6 +47,6 @@
   <p>{{ ticketData().request }}</p>
 
   @if (ticketData().status === 'open') {
-  <p><button>Mark as completed</button></p>
+  <p><button (click)="closeTicket()">Mark as completed</button></p>
   }}
 </article>
